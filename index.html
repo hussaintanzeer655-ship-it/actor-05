@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Actor Portfolio 05</title>
+<style>html,body{margin:0} body{font-family:Verdana, sans-serif;background:#f7f9fb;color:#111}
+.container{max-width:960px;margin:0 auto;padding:20px}
+.nav{display:flex;gap:8px;flex-wrap:wrap}
+.panel{border:1px solid #ddd;border-radius:8px;padding:12px;background:#fff;margin:8px 0}
+button{padding:8px 12px;border-radius:6px;border:1px solid #bbb;background:#eee}
+:focus{outline:2px solid #0b6efd;outline-offset:2px}
+</style></head>
+<body>
+<header class="container" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #ddd">
+  <strong>Actor Studio</strong>
+  <button id="kbd">Hints</button>
+</header>
+<main class="container">
+  <section class="panel" aria-label="Intro">
+    <h2 style="margin:0 0 8px">Accessible Actor Portfolio</h2>
+    <p style="margin:0">Keyboard friendly panels and readable contrast.</p>
+  </section>
+  <section class="panel" aria-label="Info panels" id="panels">
+    <div tabindex="0" style="padding:8px;border:1px solid #ddd;border-radius:6px;margin:6px 0">Panel A: Roles</div>
+    <div tabindex="0" style="padding:8px;border:1px solid #ddd;border-radius:6px;margin:6px 0">Panel B: Reel Highlights</div>
+  </section>
+</main>
+<footer class="container" style="opacity:.6">© 2026 Actor Portfolio</footer>
+<script>
+(function(){
+  const hints=document.getElementById('kbd');
+  hints.addEventListener('click',()=>{ alert('Tip: Use Tab to navigate, Enter to activate.');});
+})();
+</script>
+</body>
+</html>
